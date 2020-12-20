@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio - Faye W</title>
+        <meta name="description" content="Faye's Portfolio Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <header id="navigation">
+
+            <img id="logo" src="assets/images/Faye.png">
+
+            <nav id="desktop-menu">
+                <a href=""> About </a>
+                <a href=""> Works </a>
+                <a href=""> Contact</a>
+            </nav>
+
+            <nav id="mobile-menu">
+
+            </nav>
+
+        </header>
+
+        <div class="project-list">
+            <script id="portfolio-template" type="x-handlebars-template"> {{#each Projects}}
+                <div class="items">
+                    <h2>{{title}}</h2>
+                    <p>{{description}}</p>
+                    <img class="images" src="{{cover}}" />
+                </div>
+                {{/each}}
+            </script>
+        </div>
+
+        <script type='text/javascript' src='assets/js/handlebars.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/js/script.js" async defer></script>
+    </body>
+
+
+    <div id="extra-stuff">
+        <div id="Corona-care">Wear Masks, Wash Hands, Stay Distanced!</div>
+        <div id="Corona-stats">Global Infections: <strong id="corona-cases"></strong> Global Deaths<strong id="corona-deaths"></strong> </div>
+    </div>
+
+    <footer><p>Copyright Yufei Wang 2020</p></footer>
+</html>

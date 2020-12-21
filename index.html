@@ -20,12 +20,12 @@
         
         <header id="navigation">
 
-            <img id="logo" src="assets/images/Faye.png">
+            <a href="index.html"><img id="logo" src="assets/images/Faye.png" ></a>
 
             <nav id="desktop-menu">
-                <a href=""> About </a>
-                <a href=""> Works </a>
-                <a href=""> Contact</a>
+                <a class="menu-link" href=""> About </a>
+                <a class="menu-link" href=""> Works </a>
+                <a class="menu-link" href=""> Contact</a>
             </nav>
 
             <nav id="mobile-menu">
@@ -34,12 +34,17 @@
 
         </header>
 
+        <div id="welcome">
+            <div id="my-photo"><img src="assets/images/welcome.png"></div>
+        </div>
+
         <div class="project-list">
-            <script id="portfolio-template" type="x-handlebars-template"> {{#each Projects}}
+            <h1 class="section-name"> Projects </h1>
+            <script id="portfolio-template" type="x-handlebars-template"> 
+                {{#each Projects}}
                 <div class="items">
-                    <h2>{{title}}</h2>
-                    <p>{{description}}</p>
-                    <img class="images" src="{{cover}}" />
+                    <a href="project_detail_template.html"><img class="images" src="{{cover}}" />
+                    <h2 class="project-title">{{title}}</h2></a>
                 </div>
                 {{/each}}
             </script>
@@ -56,5 +61,5 @@
         <div id="Corona-stats">Global Infections: <strong id="corona-cases"></strong> Global Deaths<strong id="corona-deaths"></strong> </div>
     </div>
 
-    <footer><p>Copyright Yufei Wang 2020</p></footer>
+    <footer><p>Copyright © Yufei Wang 2020</p></footer>
 </html>

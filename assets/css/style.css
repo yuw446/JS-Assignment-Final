@@ -9,10 +9,10 @@ body{
 
 .items {
     width: 78vw;
-    height: 78vw;
+    height: fit-content;
     float: left;
     text-align: center;
-    background-color: gray;
+    background-color: transparent;
     margin: 1vw;
     font-weight: 700;
     background-size: contain;
@@ -22,9 +22,15 @@ body{
     list-style-type: none;
     padding: 0%;
     margin: 0%;
+    margin-right: 5%;
 
     width: 100%;
-    height: 8vw;
+    height: fit-content;
+}
+
+#welcome {
+    height: fit-content;
+    /* display: inline; */
 }
 
 #logo  {
@@ -42,8 +48,17 @@ body{
     float: right;
 }
 
+.menu-link {
+    transition: 0.5s;
+    margin-right: 2vw;
+}
+
+.menu-link:hover {
+    opacity: 75%;
+}
+
 #desktop-menu a{
-    margin: 2vw;
+    margin-top: 2vw;
     color: gray;
     text-decoration: none;
 
@@ -52,6 +67,8 @@ body{
 
 #logo {
     float: left;
+
+    max-height: 5vw;
 }
 
 #mobile-menu {
@@ -67,6 +84,7 @@ body{
 .project-list {
     position: relative;
     width: 80vw;
+    height: fit-content;
     left: 0;
     right: 0;
     margin: 2vw auto;
@@ -85,10 +103,6 @@ footer {
     opacity: 50%;
 }
 
-#extra-stuff {
-    margin-top: 18vh;
-}
-
 #Corona-stats {
     font-size: 0.5em;
 }
@@ -97,13 +111,50 @@ footer {
     margin-top: 1vw;
 }
 
+.section-name {
+    /* float: left; */
+    text-align: left;
+    width: 100%;
+    margin-left: 1vw;;
+    font-size: 72px;
+}
+
+.my-photo {
+    margin-top: 8vw;
+    margin-bottom: 5vw;
+
+    padding-top: 10vw;;
+
+    width: 100%
+}
+
+.images {
+    border-radius: 25px;
+    transition: .5s ease;
+}
+
+.images:hover{
+    opacity: 0.3;
+}
+
+.project-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.items a{
+    text-decoration: none;
+}
+
 @media all and (min-width: 800px) and (max-width: 1200px) {
     .items {
         width: calc(76vw/2);
-        height: calc(76vw/2);
+        height: fit-content;
         float: left;
         text-align: center;
-        background-color: gray;
+        background-color: transparent;
         margin: 1vw;
     }
 }
@@ -111,11 +162,13 @@ footer {
 @media all and (min-width: 1201px) {
     .items {
         width: calc(74vw/3);
-        height: calc(74vw/3);
+        height: fit-content;
         float: left;
         text-align: center;
-        background-color: gray;
+        background-color: transparent;
         margin: 1vw;
+
+        border-radius: 25px;
     }
 }
 /* FOR MOBILE */
@@ -123,10 +176,10 @@ footer {
 @media all and (max-device-width: 480px) and (orientation: portrait) {
     .items {
         width: 78vw;
-        height: 78vw;
+        height: fit-content;
         float: left;
         text-align: center;
-        background-color: gray;
+        background-color: transparent;
         margin: 1vw;
     }
 
@@ -142,10 +195,10 @@ footer {
 @media all and (max-device-width: 480px) and (orientation: landscape) {
     .items {
         width: calc(74vw/3);
-        height: calc(74vw/3);
+        height: fit-content;
         float: left;
         text-align: center;
-        background-color: gray;
+        background-color: transparent;
         margin: 1vw;
     }
 

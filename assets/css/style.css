@@ -22,7 +22,9 @@ body{
     list-style-type: none;
     padding: 0%;
     margin: 0%;
-    margin-right: 5%;
+    /* margin-right: 5%; */
+
+    display: inline-block;
 
     width: 100%;
     height: fit-content;
@@ -34,7 +36,7 @@ body{
 }
 
 #logo  {
-    height: 8vw;
+    height: 5vw;
     width: auto;
     float: left;
 }
@@ -94,6 +96,7 @@ body{
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 footer {
@@ -148,6 +151,80 @@ footer {
     text-decoration: none;
 }
 
+.project-details {
+    height: fit-content;
+    display: inline-block;
+    height: fit-content;
+    margin-bottom: 5vw;
+    position: relative;
+    overflow: overlay;
+}
+
+.in-paragraph-image {
+    margin-left: 60%;
+    margin-top: 20%;
+}
+
+.project-detail-text {
+    width: 80%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin: auto;
+    height: fit-content;
+}
+
+.project-detail-title h1 {
+    font-size: 144px;
+    text-align: left;
+    margin: auto;
+    color: white;
+}
+
+.project-detail-title hr {
+    border-top: solid 3px #ffffff;
+    max-width: 80%;
+    margin-left: 0%;
+}
+
+.project-detail-paragraph {
+    text-align: left;
+    width: 60%;
+    margin: auto;
+    margin-left: 0%;
+}
+
+.project-detail-paragraph p{
+    background: white;
+}
+
+.info-container {
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    height: fit-content;
+
+    display: inline-block;
+}
+
+.info-text-wrapper {
+    margin: auto;
+    top: 5%;s
+}
+
+.info-text-wrapper h2 {
+    font-size: 144px;
+    text-align: left;
+}
+.info-text-wrapper a {
+    text-decoration: none;
+}
+
+.info-container img{
+    
+}
+
+
 @media all and (min-width: 800px) and (max-width: 1200px) {
     .items {
         width: calc(76vw/2);
@@ -171,6 +248,8 @@ footer {
         border-radius: 25px;
     }
 }
+
+
 /* FOR MOBILE */
 
 @media all and (max-device-width: 480px) and (orientation: portrait) {

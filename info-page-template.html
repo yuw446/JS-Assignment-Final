@@ -29,37 +29,21 @@
             </nav>
 
             <nav id="mobile-menu">
-
             </nav>
 
         </header>
 
-        <div id="welcome">
-            <div id="my-photo"><img src="assets/images/welcome.png"></div>
-        </div>
-
-        <div class="project-list">
-            <h1 class="section-name"> Projects </h1>
-            <script id="portfolio-template" type="x-handlebars-template"> 
-                {{#each Projects}}
-                <div class="items">
-                    <a href="project_detail_template.html"><img class="images" src="{{cover}}" />
-                    <h2 class="project-title">{{title}}</h2></a>
-                </div>
-                {{/each}}
-            </script>
+        <div class="info-container">
+            <img src="assets/images/me.png">
+            <div class="info-text-wrapper">
+                <h2>hey, <br> you can find me through my <a href="#">email</a></h2>
+            </div>
         </div>
 
         <script type='text/javascript' src='assets/js/handlebars.js'></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="assets/js/script.js" async defer></script>
     </body>
-
-
-    <div id="extra-stuff">
-        <div id="Corona-care">Wear Masks, Wash Hands, Stay Distanced!</div>
-        <div id="Corona-stats">Global Infections: <strong id="corona-cases"></strong> Global Deaths<strong id="corona-deaths"></strong> </div>
-    </div>
 
     <footer><p>Copyright © Yufei Wang 2020</p></footer>
 </html>
